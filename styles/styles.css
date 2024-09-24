@@ -1,0 +1,207 @@
+/* General Styles */
+* {
+    box-sizing: border-box; /* Ensure padding and borders don't affect element width/height */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.intro {
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+.navbar {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Text container: General padding and margins for main content */
+.container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px; /* Maximum width for large screens */
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px;
+}
+
+/* Wiki List */
+.wiki-list {
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+.wiki-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.wiki-list li {
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+
+.wiki-list a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.wiki-list a:hover {
+    color: #333;
+}
+
+/* Person Detail Page */
+.person-detail, .achievements, .quotes, .gallery, .legacy {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.person-detail p, .achievements ul, .quotes blockquote, .legacy p {
+    line-height: 1.6;
+}
+
+.achievements ul {
+    padding-left: 20px;
+}
+
+.quotes blockquote {
+    background-color: #f0f0f0;
+    border-left: 4px solid #4CAF50;
+    padding: 10px;
+    font-style: italic;
+    margin: 20px 0;
+}
+
+.gallery .image {
+    display: block;
+    max-width: 100%;
+    margin: 10px 0;
+    height: auto;
+}
+
+/* Footer Styles */
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Mobile First Approach: General padding */
+.container, .wiki-list, .person-detail, .achievements, .quotes, .gallery, .legacy {
+    padding: 15px;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1200px) {
+    /* Adjust padding and max-width for tablets and medium-sized devices */
+    .container, .wiki-list, .person-detail, .achievements, .quotes, .gallery, .legacy {
+        max-width: 100%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Adjust layout and font sizes for smaller devices like tablets */
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .navbar li {
+        display: block; /* Stack the navbar links vertically */
+        margin-bottom: 10px;
+    }
+
+    nav {
+        padding: 0;
+    }
+
+    .container, .wiki-list, .person-detail, .achievements, .quotes, .gallery, .legacy {
+        padding: 10px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for mobile phones */
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    .navbar a {
+        font-size: 1rem;
+    }
+
+    .container, .wiki-list, .person-detail, .achievements, .quotes, .gallery, .legacy {
+        padding: 10px;
+    }
+
+    .gallery .image {
+        margin: 5px 0;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}
