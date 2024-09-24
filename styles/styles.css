@@ -21,6 +21,14 @@ header {
     text-align: center;
 }
 
+.about {
+    text-align: center;
+}
+
+.contact {
+    text-align: center;
+}
+
 .intro {
     text-align: center;
 }
@@ -140,6 +148,10 @@ footer p {
 /* Mobile First Approach: General padding */
 .container, .wiki-list, .person-detail, .achievements, .quotes, .gallery, .legacy {
     padding: 15px;
+}
+
+.section-par {
+    font-size: 20px;
 }
 
 /* Responsive Media Queries */
